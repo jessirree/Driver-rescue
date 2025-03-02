@@ -1,0 +1,18 @@
+/* Global Styles */
+body {
+  background: linear-gradient(to bottom,rgb(14,128,242),rgb(19, 42, 65));
+  color: rgb(255, 255, 255); /* Makes all text black by default */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  min-height: 100vh; /* Ensures full height */
+  text-align: center; /* Centers text */
+}
+
+/* Make all heading elements white */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}

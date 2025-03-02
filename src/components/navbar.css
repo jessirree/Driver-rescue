@@ -1,0 +1,19 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
+    backdrop-filter: blur(10px); /* Adds a slight blur effect */
+    padding: 10px 0;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: black
+  }
+  
+  .nav-label {
+    margin: 0;
+    font-size: 16px;
+  }
