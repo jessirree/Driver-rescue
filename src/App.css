@@ -11,8 +11,50 @@ body {
   min-height: 100vh; /* Ensures full height */
   text-align: center; /* Centers text */
 }
+.mb-4, .mb-5{font-weight: bold;
+  color: white;
+  text-align: center;}
 
 /* Make all heading elements white */
 h1, h2, h3, h4, h5, h6 {
   color: white;
 }
+/*  Smooth Fade-in Effect */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.white-dropdown {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.white-dropdown:focus {
+  border-color: #007bff;
+}
+
+.full-width-card {
+  width: 100%;
+  max-width: none;
+}
+
+.no-padding-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+

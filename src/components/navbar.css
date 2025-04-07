@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
+    background-color: rgba(15, 22, 30, 0.5); /* white with 50% opacity */
     backdrop-filter: blur(10px); /* Adds a slight blur effect */
     padding: 10px 0;
   }
@@ -17,3 +17,7 @@
     margin: 0;
     font-size: 16px;
   }
+  body {
+    padding-top: 60px; /* Adjust based on navbar height */
+  }
+  
