@@ -4,7 +4,7 @@ import "./Navbar.css"; // Custom styles
 
 const Navbar = () => {
   return (
-    <nav className="navbar fixed-bottom navbar-expand">
+    <nav className="navbar fixed-top navbar-expand">
       <div className="container-fluid d-flex justify-content-around">
         <a href="#" className="nav-item text-white text-center">
           <i className="bi bi-house-door"></i>

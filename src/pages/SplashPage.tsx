@@ -1,10 +1,21 @@
-
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 function SplashPage (){
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/login"); // Redirect to login after 2 seconds
+    }, 2000);
+
+    return () => clearTimeout(timer); // Cleanup timeout on unmount
+  }, [navigate]);
+
   return (
     <div
-      className="d-flex flex-column justify-content-center align-items-center text-center"
+      className="d-flex flex-column justify-content-center align-items-center text-center splash-page"
       style={{
         height: "100vh",
         background: "linear-gradient(to bottom, #001f3f, #004080)",
@@ -12,23 +23,13 @@ function SplashPage (){
       }}
     >
       {/* Logo and Title */}
-      <div>
+      <div className="fade-in">
         <img
-           src= "/assets/logo.png"
-          style={{ width: "300px", height: "300px",   transform: "scaleX(-1)" }}
+          src="../assets/logo.png" // Fix path
+          alt="Driver Rescue Logo"
+          style={{ width: "300px", height: "300px", transform: "scaleX(-1)" }}
         />
         <h1 className="mt-3">Your Roadside Help, Just a Click Away</h1>
-      </div>
-
-      {/* Buttons */}
-      <div className="mt-4">
-        <button className="btn btn-light btn-lg mb-3" style={{ width: "200px" }}>
-          Sign Up
-        </button>
-        <br />
-        <button className="btn btn-outline-light btn-lg" style={{ width: "200px" }}>
-          Log In
-        </button>
       </div>
 
       {/* Footer */}
@@ -47,6 +48,7 @@ function SplashPage (){
       </div>
     </div>
   );
-};
+}
+
 
 export default SplashPage;
